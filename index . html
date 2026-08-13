@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Qaswa Law Associates | Advocates & Legal Consultants</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(
+          rgba(17, 24, 39, 0.85),
+          rgba(17, 24, 39, 0.85)
+        ),
+        url("law-bg.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+      color: #d4af37;
+    }
+
+    .hero h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      background: #d4af37;
+      color: #111827;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 35px;
+      color: #111827;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .services {
+      background: #f1f3f5;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .service {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .lawyer {
+      background: white;
+    }
+
+    .lawyer-card {
+      max-width: 850px;
+      margin: auto;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      padding: 30px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .lawyer-card img {
+      width: 230px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .lawyer-info h3 {
+      font-size: 28px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .lawyer-info .title {
+      color: #b18b20;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title h2 {
+      color: white;
+    }
+
+    .contact-info {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+    }
+
+    .contact-item a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #080c14;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .lawyer-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .lawyer-card img {
+        width: 200px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">QASWA LAW ASSOCIATES</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#lawyer">Advocate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- HOME -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>Qaswa Law Associates</h1>
+
+      <h2>Advocates & Legal Consultants</h2>
+
+      <p>
+        Professional legal representation, trusted advice,
+        and dedicated advocacy for our clients.
+      </p>
+
+      <a href="#contact" class="btn">Contact Us</a>
+
+      <a href="#services" class="btn">Our Services</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+      <p>Professional. Trusted. Dedicated.</p>
+    </div>
+
+    <div class="about-content">
+
+      <p>
+        Qaswa Law Associates provides professional legal services
+        and consultation with a strong commitment to our clients.
+        Our goal is to provide clear legal guidance, effective
+        representation and practical solutions to legal matters.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="section-title">
+
+      <h2>Our Legal Services</h2>
+
+      <p>Comprehensive legal assistance for our clients</p>
+
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <div class="service-icon">⚖️</div>
+        <h3>Civil Law</h3>
+        <p>
+          Legal advice and representation in civil matters
+          and disputes.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🏛️</div>
+        <h3>Criminal Law</h3>
+        <p>
+          Professional legal representation in criminal cases
+          and proceedings.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">📜</div>
+        <h3>Family Law</h3>
+        <p>
+          Assistance with family disputes and related legal matters.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate Law</h3>
+        <p>
+          Legal consultation for businesses, companies and organizations.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ADVOCATE -->
+
+  <section class="lawyer" id="lawyer">
+
+    <div class="section-title">
+
+      <h2>Our Advocate</h2>
+
+      <p>Experienced legal representation</p>
+
+    </div>
+
+    <div class="lawyer-card">
+
+      <!-- Your advocate photo should be named advocate.jpg -->
+
+      <img src="advocate.jpg" alt="Advocate">
+
+      <div class="lawyer-info">
+
+        <h3>Advocate</h3>
+
+        <div class="title">
+          Advocate High Court
+        </div>
+
+        <p>
+          Providing professional legal consultation and
+          representation with dedication, integrity and
+          commitment to clients.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+
+      <h2>Contact Us</h2>
+
+      <p>Get in touch for legal consultation</p>
+
+    </div>
+
+    <div class="contact-info">
+
+      <div class="contact-item">
+        📞 Phone:
+        <a href="tel:+923001234567">
+          +92 300 1234567
+        </a>
+      </div>
+
+      <div class="contact-item">
+        📧 Email:
+        <a href="mailto:info@qaswalawassociates.com">
+          info@qaswalawassociates.com
+        </a>
+      </div>
+
+      <div class="contact-item">
+        📍 Location:
+        Pakistan
+      </div>
+
+      <br>
+
+      <a href="tel:+923001234567" class="btn">
+        Call Now
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    © 2026 Qaswa Law Associates. All Rights Reserved.
+
+  </footer>
+
+</body>
+</html>
